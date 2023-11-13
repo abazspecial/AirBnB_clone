@@ -75,7 +75,7 @@ class TestBase(unittest.TestCase):
             self.assertEqual(json.load(f), d)
 
     def test_save_no_args(self):
-        """Tests save() with no arguments."""
+        """The Tests save() with no arguments."""
         self.resetStorage()
         with self.assertRaises(TypeError) as e:
             BaseModel.save()
@@ -83,7 +83,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(str(e.exception), msg)
 
     def test_save_excess_args(self):
-        """Tests save() with too many arguments."""
+        """the Tests save() with too many arguments."""
         self.resetStorage()
         with self.assertRaises(TypeError) as e:
             BaseModel.save(self, 98)
@@ -91,7 +91,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(str(e.exception), msg)
 
     def test_str(self):
-        """Test method for str representation"""
+        """the Test method for str representation"""
         b1 = BaseModel()
         string = f"[{type(b1).__name__}] ({b1.id}) {b1.__dict__}"
         self.assertEqual(b1.__str__(), string)

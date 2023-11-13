@@ -9,13 +9,13 @@ from datetime import datetime
 
 class BaseModel():
     """
-    Base class which defines all common
+  The   Base class which defines all common
     attributes/methods for other classes
     """
 
     def __init__(self, *args, **kwargs):
         """
-        instatiates an object with it's
+     it    instatiates an object with it's
         attributes
         """
         if len(kwargs) > 0:
@@ -35,7 +35,7 @@ class BaseModel():
 
     def __str__(self):
         """
-        Returns the string representation
+     also   Returns the string representation
         of the instance
         """
         return "[{}] ({}) {}".format(
@@ -51,7 +51,7 @@ class BaseModel():
 
     def to_dict(self):
         """
-        returns a dictionary containing all keys/values
+        also returns a dictionary containing all keys/values
         of __dict__ of the instance
         """
         dict = {**self.__dict__}

@@ -1,10 +1,7 @@
 #!/usr/bin/python3
 """This module defines the entry point of the command interpreter.
 
-It defines one class, `HBNBCommand()`, which sub-classes the `cmd.Cmd` class.
-This module defines abstractions that allows us to manipulate a powerful
-storage system (FileStorage / DB). This abstraction will also allow us to
-change the type of storage easily without updating all of our codebase.
+This ,model defines abstaction
 
 It allows us to interactively and non-interactively:
     - create a data model

@@ -56,14 +56,15 @@
 .popover {
 	display: none;
 	position: absolute;
-	left: 0;
-	bottom: 0;
-	transform: translateY(100%);
-	width: 100%;
 	background-color: #FAFAFA;
 	border: 1px solid #DDDDDD;
 	border-radius: 4px;
 	padding: 30px;
+	left: 0;
+	bottom: 0;
+	transform: translateY(100%);
+	width: 100%;
+
 }
 
 .locations:hover > .popover, .amenities:hover > .popover {

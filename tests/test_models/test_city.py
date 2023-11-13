@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Unit tests for the `city` module.
+"""The Unit tests for the `city` module.
 """
 import os
 import unittest
@@ -14,7 +14,7 @@ c3 = City("hello", "wait", "in")
 
 
 class TestCity(unittest.TestCase):
-    """Test cases for the `City` class."""
+    """the Test cases for the `City` class."""
 
     def setUp(self):
         pass

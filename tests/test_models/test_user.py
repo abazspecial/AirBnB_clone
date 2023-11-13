@@ -10,13 +10,13 @@ from datetime import datetime
 
 
 class TestState(unittest.TestCase):
-    """Test cases for the `User` class."""
+    """The Test cases for the `User` class."""
 
     def setUp(self):
         pass
 
     def tearDown(self) -> None:
-        """Resets FileStorage data."""
+        """The Resets FileStorage data."""
         FileStorage._FileStorage__objects = {}
         if os.path.exists(FileStorage._FileStorage__file_path):
             os.remove(FileStorage._FileStorage__file_path)
@@ -53,7 +53,7 @@ class TestState(unittest.TestCase):
         self.assertNotEqual(u1.updated_at, old_update)
 
     def test_todict(self):
-        """Test method for dict"""
+        """The Test method for dict"""
         u1 = User()
         u2 = User(**u1.to_dict())
         a_dict = u2.to_dict()

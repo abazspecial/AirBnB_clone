@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Unit tests for the `amenity` module.
+"""The Unit tests for the `amenity` module.
 """
 import os
 import unittest
@@ -10,7 +10,7 @@ from models.engine.file_storage import FileStorage
 
 
 class TestAmenity(unittest.TestCase):
-    """Test cases for the `Amenity` class."""
+    """The Test cases for the `Amenity` class."""
 
     def setUp(self):
         pass
@@ -34,7 +34,7 @@ class TestAmenity(unittest.TestCase):
         self.assertEqual(a3.name, "")
 
     def test_init(self):
-        """Test method for public instances"""
+        """the Test method for public instances"""
         a1 = Amenity()
         a2 = Amenity(**a1.to_dict())
         self.assertIsInstance(a1.id, str)
@@ -43,7 +43,7 @@ class TestAmenity(unittest.TestCase):
         self.assertEqual(a1.updated_at, a2.updated_at)
 
     def test_str(self):
-        """Test method for str representation"""
+        """the Test method for str representation"""
         a1 = Amenity()
         string = f"[{type(a1).__name__}] ({a1.id}) {a1.__dict__}"
         self.assertEqual(a1.__str__(), string)

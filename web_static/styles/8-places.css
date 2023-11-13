@@ -34,12 +34,12 @@
 .places-container .information > .max_guest {
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
-	align-items: center;
 	background-image: url("/AirBnB_clone/web_static/images/icon_group.png");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: 40px;
+	justify-content: end;
+	align-items: center;
 }
 
 .places-container .information > .number_rooms {
@@ -56,12 +56,13 @@
 .places-container .information > .number_bathrooms {
 	display: flex;
 	flex-direction: column;
-	background-image: url("/AirBnB_clone/web_static/images/icon_bath.png");
-	background-repeat: no-repeat;
-	background-position: top;
 	justify-content: end;
 	align-items: center;
 	background-size: 40px;
+	background-image: url("/AirBnB_clone/web_static/images/icon_bath.png");
+	background-repeat: no-repeat;
+	background-position: top;
+
 }
 
 .places-container .user {
@@ -93,10 +94,11 @@
 
 .places > .places-container {
 	width: 100%;
-	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+	display: flex;
+
 }
 
 .places > h1 {

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Unit tests for the `review` module.
+"""The Unit tests for the `review` module.
 """
 import os
 import unittest
@@ -10,13 +10,13 @@ from models.engine.file_storage import FileStorage
 
 
 class TestReview(unittest.TestCase):
-    """Test cases for the `Review` class."""
+    """The Test cases for the `Review` class."""
 
     def setUp(self):
         pass
 
     def tearDown(self) -> None:
-        """Resets FileStorage data."""
+        """it Resets FileStorage data."""
         FileStorage._FileStorage__objects = {}
         if os.path.exists(FileStorage._FileStorage__file_path):
             os.remove(FileStorage._FileStorage__file_path)
